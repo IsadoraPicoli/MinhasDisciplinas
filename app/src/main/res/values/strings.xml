@@ -1,3 +1,73 @@
 <resources>
     <string name="app_name">Minhas Disciplinas</string>
+
+    <!-- Tabs -->
+    <string name="tab_text_1">Disciplinas</string>
+    <string name="tab_text_2">Meu Perfil</string>
+
+    <!-- Textos e Títulos -->
+    <string name="titulo_login">Faça Login</string>
+    <string name="titulo_cadastro">Crie sua conta</string>
+    <string name="data_entrega">Data e hora de entrega</string>
+    <string name="txt_ano_semestre">Ano/Semestre:</string>
+
+    <!-- Botões -->
+    <string name="btn_login">Login</string>
+    <string name="btn_cadastrar">Cadastre-se</string>
+    <string name="btn_sair">Sair</string>
+    <string name="btn_editar">Editar</string>
+    <string name="btn_salvar">Salvar</string>
+    <string name="btn_remover">Remover</string>
+
+    <!-- Content Descriptions -->
+    <string name="fab_disciplinas_content_description">Adicionar uma disciplina</string>
+    <string name="fab_avaliacoes_content_description">Adicionar uma avaliação</string>
+    <string name="tabs_content_description">Abas: Disciplinas e Meu perfil</string>
+    <string name="tabs_conteudo_content_description">Conteúdo das abas</string>
+
+    <!-- Formulário de Cadastro e Login -->
+    <string name="nome">Nome</string>
+    <string name="curso">Curso</string>
+    <string name="email">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="confirma_senha">Confirme sua senha</string>
+
+    <!-- Formulário de Disciplina -->
+    <string name="disciplina">Disciplina</string>
+    <string name="professor">Professor(a)</string>
+    <string name="turma">Turma</string>
+    <string name="ano_semestre">Ano/Semestre</string>
+    <string name="carga_horaria">Carga Horária</string>
+    <string name="situacao">Situação</string>
+    <string name="matriculado">Matriculado</string>
+    <string name="aprovado">Aprovado</string>
+    <string name="reprovado">Reprovado</string>
+    <string name="periodo">Período</string>
+    <string name="format_date">dd/mm/yyyy</string>
+    <string name="periodo_inicio">Início</string>
+    <string name="periodo_fim">Término</string>
+
+    <!-- Formulário de Avaliação -->
+    <string name="avaliacao">Avaliação</string>
+    <string name="tipo">Tipo da avaliação</string>
+    <string name="prova">Prova</string>
+    <string name="trabalho">Trabalho</string>
+    <string name="atividade">Atividade</string>
+    <string name="lista">Lista de exercícios</string>
+    <string name="data">Data</string>
+    <string name="hora">Hora</string>
+    <string name="nota">Nota</string>
+    <string name="sem_nota">Sem nota</string>
+    <string name="format_hora">hh:mm</string>
+
+    <!-- Arrays -->
+    <string-array name="ano_semestre_array">
+        <item>2020/1</item>
+        <item>2020/2</item>
+        <item>2021/1</item>
+        <item>2021/2</item>
+        <item>2022/1</item>
+        <item>2022/2</item>
+    </string-array>
+
 </resources>

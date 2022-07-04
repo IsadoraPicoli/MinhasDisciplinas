@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="br.ufms.pdm.minhasdisciplinas" >
+    package="br.ufms.pdm.minhasdisciplinas">
 
     <application
         android:allowBackup="true"
@@ -12,17 +12,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MinhasDisciplinas"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.activity.FormularioAvaliacaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.ListaAvaliacoesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.FormularioDisciplinaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.CadastroActivity"
+            android:theme="@style/Theme.MinhasDisciplinas.NoActionBar" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:theme="@style/Theme.MinhasDisciplinas.NoActionBar" />
         <activity
             android:name=".ui.activity.SplashScreenActivity"
             android:exported="true"
-            android:theme="@style/AppCompat.Fullscreen" >
+            android:theme="@style/AppCompat.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.LoginActivity" />
     </application>
 
 </manifest>

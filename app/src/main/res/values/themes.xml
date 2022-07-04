@@ -18,4 +18,11 @@
     <style name="AppCompat.Fullscreen" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowFullscreen">true</item>
     </style>
+
+    <!-- No Action Bar theme. -->
+    <style name="Theme.MinhasDisciplinas.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar" />
+
+    <style name="Theme.MinhasDisciplinas.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MinhasDisciplinas.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

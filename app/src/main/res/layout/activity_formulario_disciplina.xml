@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.activity.FormularioDisciplinaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <!-- Testar: colocar hint no TextInputLayout tbm) -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_formulario_disciplina_txt_input_layout_disciplina"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_formulario_disciplina_edtxt_disciplina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/disciplina"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_formulario_disciplina_txt_input_layout_professor"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_formulario_disciplina_edtxt_professor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/professor"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_formulario_disciplina_txt_input_layout_turma"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_formulario_disciplina_edtxt_turma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/turma"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Colocar hint mostrando o formato (pesquisar como deixar na formatação a medida que o usuário digita) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/activity_formulario_disciplina_txt_input_layout_ano_semestre"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/activity_formulario_disciplina_edtxt_ano_semestre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ano_semestre"
+                    android:maxLength="7"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/activity_formulario_disciplina_txt_input_layout_carga_horaria"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/activity_formulario_disciplina_edtxt_carga_horaria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/carga_horaria"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_formulario_disciplina_txt_periodo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:text="@string/periodo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/activity_formulario_disciplina_txt_input_layout_periodo_inicio"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/activity_formulario_disciplina_edtxt_periodo_inicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/periodo_inicio"
+                    android:inputType="date"
+                    android:maxLength="10"
+                    android:selectAllOnFocus="true"
+                    android:text="@string/format_date" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/activity_formulario_disciplina_txt_input_layout_periodo_fim"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/activity_formulario_disciplina_edtxt_periodo_fim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/periodo_fim"
+                    android:inputType="date"
+                    android:maxLength="10"
+                    android:selectAllOnFocus="true"
+                    android:text="@string/format_date" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_formulario_disciplina_txt_situacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:text="@string/situacao"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/activity_formulario_disciplina_radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:checkedButton="@id/activity_formulario_disciplina_radioBtn_matriculado">
+
+            <RadioButton
+                android:id="@+id/activity_formulario_disciplina_radioBtn_matriculado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/matriculado"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/activity_formulario_disciplina_radioBtn_aprovado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aprovado"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/activity_formulario_disciplina_radioBtn_reprovado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reprovado"
+                android:textSize="16sp" />
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>
