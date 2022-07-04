@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "525268432802",
+    "project_id": "minhas-disciplinas",
+    "storage_bucket": "minhas-disciplinas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525268432802:android:8bbe9f1fcbcaf7b3fbe4fb",
+        "android_client_info": {
+          "package_name": "br.ufms.pdm.minhasdisciplinas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525268432802-r08a3dckg91tel6i74erf4o9ebru17c4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf_nEASbYXgBXveDRNFmTN0vmOlwiDR8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525268432802-r08a3dckg91tel6i74erf4o9ebru17c4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
